@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Wars</title>
+  <link rel="icon" type="image/png" href="1200px-Star_wars2.svg.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    body {
+      /* multitone background */
+      /* background-image: linear-gradient(to top right, rgb(0, 0, 0), rgb(255, 255, 255)); */
+      /* image background */
+      background-image: url("https://static.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    ul {
+      position: sticky;
+      z-index: 1;
+      list-style-type: none;
+      background-color: rgb(236, 230, 51);
+      width: 100%;
+      padding: 0;
+      top: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+    }
+
+    li.about {
+      float: right;
+    }
+
+    li a {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      padding: 20px 20px;
+      display: block;
+      text-align: center;
+      color: black;
+    }
+
+    li a:hover:not(.active) {
+      background-color: crimson;
+      color: white;
+    }
+
+    li a.active {
+      color: white;
+      background-color: crimson;
+    }
+
+    li div a {
+      color: aliceblue;
+      text-decoration: none;
+    }
+
+    .cdrop {
+      position: relative;
+      display: inline-block;
+    }
+
+    .cdown1 {
+      display: none;
+      position: fixed;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 2;
+    }
+
+    .cdrop:hover .cdown1 {
+      display: block;
+    }
+
+    td {
+      color: aliceblue;
+      width: max-content;
+      border: 2px solid white;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    th {
+      color: black;
+      width: max-content;
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: aliceblue;
+    }
+
+    table {
+      border: 2px solid white;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hiddenimg {
+      display: none;
+    }
+
+    .hiddentxt {
+      font-weight: bold;
+      z-index: 99;
+    }
+
+    .hiddentxt:hover~.hiddenimg {
+      display: block;
+      position: absolute;
+      z-index: 2;
+    }
+
+    div ul {
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      height: max-content;
+    }
+
+    li.footer a:hover {
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>
+      <a class="active" href="D:/WebDevelopment/Recap.html" alt="Home" title="Home"><i
+          class="material-icons">home</i></a>
+    </li>
+    <li class="cdrop">
+      <a>Characters</a>
+      <div class="cdown1">
+        <a href="#">Darth Vader</a>
+        <a href="#">Obi-Wan Kenobi</a>
+        <a href="#">Luke Skywalker</a>
+        <a href="#">Master Yoda</a>
+        <a href="#">Palpatine</a>
+      </div>
+    </li>
+    <li class="cdrop">
+      <a>Movies</a>
+      <div class="cdown1">
+        <a href="D:/WebDevelopment/hope.html">A New Hope</a>
+        <a href="D:\WebDevelopment\empire.html">Empire Strikes Back</a>
+        <a href="D:\WebDevelopment\return.html">Return of the Jedi</a>
+      </div>
+    </li>
+    <li class="cdrop">
+      <a>Series</a>
+      <div class="cdown1">
+        <a href="#">Obi-Wan Kenobi</a>
+      </div>
+    </li>
+    <li class="about"><a>About</a></li>
+  </ul>
+  <h1 style="color: aliceblue; font-family: Arial, Helvetica, sans-serif">
+    Star Wars
+    <marquee behavior="scroll" direction="left" scrollamount="10" style="
+          background-color: rgb(0, 0, 0, 0);
+          color: aliceblue;
+          float: right;
+        " width="50%" height="100px">
+      <p>May the force be with you</p>
+    </marquee>
+  </h1>
+  <hr />
+  <p style="
+        color: rgb(1, 1, 1);
+        font-size: larger;
+        font: bolder;
+        background-color: rgba(237, 238, 242, 0.8);
+      ">
+    Star Wars is an American epic space opera multimedia franchise created by
+    George Lucas, which began with the eponymous 1977 film and quickly became
+    a worldwide pop-culture phenomenon. The franchise has been expanded into
+    various films and other media, including television series, video games,
+    novels, comic books, theme park attractions, and themed areas, comprising
+    an all-encompassing fictional universe. Star Wars is one of the
+    highest-grossing media franchises of all time.<br />
+    The original film (Star Wars), retroactively subtitled Episode IV: A New
+    Hope (1977), was followed by the sequels Episode V: The Empire Strikes
+    Back (1980) and Episode VI: Return of the Jedi (1983), forming the
+    original Star Wars trilogy. Lucas later returned to the series to direct a
+    prequel trilogy, consisting of Episode I: The Phantom Menace (1999),
+    Episode II: Attack of the Clones (2002), and Episode III: Revenge of the
+    Sith (2005). In 2012, Lucas sold his production company to Disney,
+    relinquishing his ownership of the franchise. This led to a sequel
+    trilogy, consisting of Episode VII: The Force Awakens (2015), Episode
+    VIII: The Last Jedi (2017), and Episode IX: The Rise of Skywalker
+    (2019).<br />
+    All nine films of the "Skywalker Saga" were nominated for Academy Awards,
+    with wins going to the first two releases. Together with the theatrical
+    live action "anthology" films Rogue One (2016) and Solo (2018), the
+    combined box office revenue of the films equated to over US$10 billion,
+    which makes it the second-highest-grossing film franchise of all time.
+    Additional upcoming films are in the works, including an untitled movie
+    from Taika Waititi and Rogue Squadron directed by Patty Jenkins, both
+    currently without release dates
+  </p>
+  <hr />
+  <div>
+    <img src="https://cdn.britannica.com/18/187418-131-36729551/Harrison-Ford-Han-Solo-Alec-Guinness-David.jpg"
+      alt="original" width="435px" height="435px" style="border-radius: 50%" />
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1632756710722-RJM21PL6AY3MPVZX6ZOQ/mark-hamill-defends-the-star-wars-prequel-trilogy.jpg"
+      alt="prequel" width="435px" height="435px" style="border-radius: 50%" />
+    <img src="https://www.starwarsnewsnet.com/wp-content/uploads/2022/05/Star-Wars-Sequel-Trilogy-Collage.png"
+      alt="sequel" width="435px" height="435px" style="border-radius: 50%" />
+  </div>
+  <hr />
+  <h2 style="color: aliceblue; font-family: Arial, Helvetica, sans-serif">
+    Star Wars Films
+  </h2>
+  <hr />
+  <table>
+    <tr>
+      <th>Films</th>
+      <th>Release Date</th>
+    </tr>
+    <tr>
+      <th colspan="2">Original Trilogy: Episode IV-VI</th>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a href="https://m.media-amazon.com/images/I/91MMkv35K5L._RI_.jpg"
+            style="text-decoration: none; color: aliceblue">A New Hope</a></span><span class="hiddenimg"><img
+            src="https://m.media-amazon.com/images/I/91MMkv35K5L._RI_.jpg" width="250" /></span>
+      </td>
+      <td>25 May 1977</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a href="https://flxt.tmsimg.com/assets/p8884_p_v8_ae.jpg"
+            style="text-decoration: none; color: aliceblue">Empire Strikes Back</a></span><span class="hiddenimg"><img
+            src="https://flxt.tmsimg.com/assets/p8884_p_v8_ae.jpg" width="250" /></span>
+      </td>
+      <td>21 May 1980</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a href="https://m.media-amazon.com/images/I/81g8vEs4ixL.jpg"
+            style="text-decoration: none; color: aliceblue">The Return of Jedi</a></span><span class="hiddenimg"><img
+            src="https://m.media-amazon.com/images/I/81g8vEs4ixL.jpg" width="250" /></span>
+      </td>
+      <td>25 May 1983</td>
+    </tr>
+    <tr>
+      <th colspan="2">Prequel Trilogy: Episode I-III</th>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+            style="text-decoration: none; color: aliceblue">The Phantom Menace</a></span><span class="hiddenimg"><img
+            src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+            width="250" /></span>
+      </td>
+      <td>19 May 1999</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://images.moviesanywhere.com/0c0ccd955dd1ea84822c1ce41bc4f389/c0957716-73bb-43d1-b90b-88955f89dad3.jpg"
+            style="text-decoration: none; color: aliceblue">Attack of the Clones</a></span><span class="hiddenimg"><img
+            src="https://images.moviesanywhere.com/0c0ccd955dd1ea84822c1ce41bc4f389/c0957716-73bb-43d1-b90b-88955f89dad3.jpg"
+            width="250" /></span>
+      </td>
+      <td>16 May 2002</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg"
+            style="text-decoration: none; color: aliceblue">Revenge of the Sith</a></span><span class="hiddenimg"><img
+            src="https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg"
+            width="250" /></span>
+      </td>
+      <td>19 May 2005</td>
+    </tr>
+    <tr>
+      <th colspan="2">Sequel Trilogy: Episode VII-IX</th>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://cdn.vox-cdn.com/thumbor/8csW_DT10d8--2ImLNy85u1y-bo=/0x0:1536x864/1200x800/filters:focal(337x270:581x514)/cdn.vox-cdn.com/uploads/chorus_image/image/48434499/tfa_poster_wide_header-1536x864-324397389357.0.0.jpg"
+            style="text-decoration: none; color: aliceblue">The Force Awakens</a></span><span class="hiddenimg"><img
+            src="https://cdn.vox-cdn.com/thumbor/8csW_DT10d8--2ImLNy85u1y-bo=/0x0:1536x864/1200x800/filters:focal(337x270:581x514)/cdn.vox-cdn.com/uploads/chorus_image/image/48434499/tfa_poster_wide_header-1536x864-324397389357.0.0.jpg"
+            width="250" /></span>
+      </td>
+      <td>18 December 2015</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_.jpg"
+            style="text-decoration: none; color: aliceblue">The Last Jedi</a></span><span class="hiddenimg"><img
+            src="https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_.jpg"
+            width="250" /></span>
+      </td>
+      <td>15 December 2017</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg"
+            style="text-decoration: none; color: aliceblue">The Rise of Skywalker</a></span><span class="hiddenimg"><img
+            src="https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg"
+            width="250" /></span>
+      </td>
+      <td>20 December 2019</td>
+    </tr>
+    <tr>
+      <th colspan="2">Spin Off</th>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://upload.wikimedia.org/wikipedia/en/d/d4/Rogue_One%2C_A_Star_Wars_Story_poster.png"
+            style="text-decoration: none; color: aliceblue">Rogue One</a></span><span class="hiddenimg"><img
+            src="https://upload.wikimedia.org/wikipedia/en/d/d4/Rogue_One%2C_A_Star_Wars_Story_poster.png"
+            width="250" /></span>
+      </td>
+      <td>16 December 2016</td>
+    </tr>
+    <tr>
+      <td>
+        <span class="hiddentxt"><a
+            href="https://lumiere-a.akamaihd.net/v1/images/image_517b1d6c.jpeg?region=0%2C0%2C540%2C810"
+            style="text-decoration: none; color: aliceblue">Solo</a></span><span class="hiddenimg"><img
+            src="https://lumiere-a.akamaihd.net/v1/images/image_517b1d6c.jpeg?region=0%2C0%2C540%2C810"
+            width="250" /></span>
+      </td>
+      <td>25 May 2018</td>
+    </tr>
+  </table>
+  <hr />
+  <h2 style="color: aliceblue; font-family: Arial, Helvetica, sans-serif">
+    Star Wars Main Theme
+  </h2>
+  <hr />
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/LtFeTNduo18" style="margin: auto; display: block"
+    title="Star Wars: The Force Theme x Main Theme | EPIC VERSION (Kenobi Tribute)" frameborder="10"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  <hr />
+  <div>
+    <ul>
+      <li class="footer">
+        <a href="https://twitter.com/TUSHARS15000631" alt="Twitter" title="Twitter"
+          style="color: lightseagreen; width: 40px" target="_blank"><i class="fa fa-twitter"
+            style="font-size: 40px; color: lightseagreen"></i></a>
+      </li>
+      <li class="footer">
+        <a href="https://www.instagram.com/tusharsingh9235/" alt="Instagram" title="Instagram"
+          style="color: rgb(193, 10, 65)" target="_blank"><i class="fa fa-instagram"
+            style="font-size: 40px; color: rgb(193, 10, 65)"></i></a>
+      </li>
+    </ul>
+  </div>
+  <p>
+    <center style="color: aliceblue">
+      Developed by Tushar Singh.
+    </center>
+  </p>
+  <script src="script.js"></script>
+</body>
+
+</html>
